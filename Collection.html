@@ -1,1 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acecraft Apparel</title>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js" integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <style>
+    /* Reset styles */
+    *{margin:0;
+      padding:0;
+      box-sizing:border-box;
+     }
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    /* Navbar styles */
+    .navbar {
+      background-color: #333;
+      padding: 20px;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbar-brand {
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #fff;
+    }
+    .navbar-menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    .navbar-menu li {
+      margin-left: 20px;
+    }
+    .navbar-menu li a {
+      text-decoration: none;
+      color: #fff;
+      transition: color 0.3s ease;
+    }
+    .navbar-menu li a:hover {
+      color: #ffc107;
+    }
+    /* Hero section styles */
+    
+    /* Collection section styles */
+    #collection {
+  background-color: #f5f5f5;
+  text-align: center;
+  width:100%;
+  height:auto;
+}
 
+#collection h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#designs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  margin-top: 20px;
+  width:100%;
+  height:auto;
+}
+
+.design-card img {
+  width: 200px;
+  height: 250px;
+  display:fl
+}
+
+#collection button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ffc107;
+  color: #333;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#collection button:hover {
+  background-color: #ffdb5a;
+}
+
+    /* Contact section styles */
+    
+    /* Media Query for Screens with min-width 280px and max-width 914px */
+@media screen and (min-width: 280px) and (max-width: 914px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-menu li {
+    margin: 10px 0;
+  }
+
+
+  #collection {
+    padding: 50px 20px;
+  }
+
+  #collection h2 {
+    font-size: 28px;
+  }
+
+  #designs {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .design-card img {
+    width: 100%;
+    height: auto;
+    display:flex;
+  }
+
+  
+}
+  </style>
+</head>
+<body>
+<header>
+<!-- Navbar -->
+<nav class="navbar">
+  <a href="#" class="navbar-brand">Acecraft Apparel</a>
+  <ul class="navbar-menu">
+    <li><a href="#about">About</a></li>
+    <li><a href="#collection">Collection</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+  </header>
+<main>
+<!-- Hero section -->
+<!-- Collection section -->
+<section id="collection" class="collection">
+  <h2>Our Design Collection</h2>
+  <div id="designs">
+    <div class="design-card">
+    <img src="Watermarked Tshirt Designs/Tshirt Design 01 .jpg" alt="Design 1">
+    </div>
+    <div class="design-card">
+    <img src="./Watermarked Tshirt Designs/Tshirt Design 04.jpg" alt="Design 2">
+    </div>
+    <div class="design-card">
+    <img src="./Watermarked Tshirt Designs/Tshirt Design 05.jpg" alt="Design 3">
+    </div>
+    <div class="design-card">
+    <img src="./Watermarked Tshirt Designs/Tshirt Design 06.jpg" alt="Design 3">
+    </div> <!-- Add more design images as needed -->
+     <div class="design-card">
+    <img src="./Watermarked Tshirt Designs/Tshirt Design 07.jpg" alt="Design 3">
+    </div> <!-- Add more design images as needed -->
+        <div class="design-card">
+    <img src="./Watermarked Tshirt Designs/Tshirt Design 08.jpg" alt="Design 3">
+    </div> <!-- Add more design images as needed -->
+        <div class="design-card">
+    <img src="./Watermarked Tshirt Designs/Tshirt Design 09.jpg" alt="Design 3">
+    </div> <!-- Add more design images as needed -->
+       <div class="design-card">
+    <img src="./Watermarked Tshirt Designs/Tshirt Design 3.jpg" alt="Design 3">
+    </div> <!-- Add more design images as needed -->
+           <div class="design-card">
+    <img src="./Watermarked Tshirt Designs/Tshirt Design 2.jpg" alt="Design 3">
+    </div> <!-- Add more design images as needed -->
+  </div>
+  <button>See More</button>
+    <script>
+    $(document).ready(function() {
+      // Disable right-click on images within the designs class
+      $('.designs img').on('contextmenu', function(e) {
+        // Prevent the default context menu from appearing
+        e.preventDefault();
+        // Optionally, you can provide a message or perform another action
+        alert("Right-click disabled. Image downloading is not allowed.");
+      });
+    });
+  </script>
+</section>
+<!-- <section id="tshirt">
+  <div class="shirt">
+     <script>
+        // Create a scene
+        const scene = new THREE.Scene();
+
+        // Create a camera
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        camera.position.z = 5;
+
+        // Create a renderer and attach it to the .shirt div
+        const renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.querySelector('.shirt').appendChild(renderer.domElement);
+
+        // Lighting
+        const light = new THREE.DirectionalLight(0xffffff, 1);
+        light.position.set(5, 5, 5).normalize();
+        scene.add(light);
+
+        // Add an ambient light for softer lighting
+        const ambientLight = new THREE.AmbientLight(0x404040);
+        scene.add(ambientLight);
+
+        // Create the body of the t-shirt using a BoxGeometry
+        const bodyGeometry = new THREE.BoxGeometry(2, 3, 0.5);
+        const bodyMaterial = new THREE.MeshPhongMaterial({ color: 0x000000 });
+        const body = new THREE.Mesh(bodyGeometry, bodyMaterial);
+        body.scale.set(1.2, 1.5, 1);
+        scene.add(body);
+
+        // Create the sleeves using CylinderGeometry
+        const sleeveGeometry = new THREE.CylinderGeometry(0.5, 0.5, 3, 32);
+        const sleeveMaterial = new THREE.MeshPhongMaterial({ color: 0x000000 });
+
+        // Left sleeve
+        const leftSleeve = new THREE.Mesh(sleeveGeometry, sleeveMaterial);
+        leftSleeve.rotation.z = Math.PI / 2;
+        leftSleeve.position.set(-1.6, 0.6, 0);
+        leftSleeve.scale.set(1, 0.7, 1);
+        scene.add(leftSleeve);
+
+        // Right sleeve
+        const rightSleeve = new THREE.Mesh(sleeveGeometry, sleeveMaterial);
+        rightSleeve.rotation.z = Math.PI / 2;
+        rightSleeve.position.set(1.6, 0.6, 0);
+        rightSleeve.scale.set(1, 0.7, 1);
+        scene.add(rightSleeve);
+
+        // Function to animate the scene
+        function animate() {
+            requestAnimationFrame(animate);
+            renderer.render(scene, camera);
+        }
+
+        animate();
+    </script>
+  </div>
+</section> -->
+<!-- Contact section -->
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+ 
+  // Animate the collection section
+  anime({
+    targets: '#collection h2',
+    translateX: [-100, 0],
+    opacity: [0, 1],
+    delay: 1300,
+    duration: 1000,
+    easing: 'easeOutExpo',
+  });
+
+  anime({
+    targets: '.collection #designs img',
+    scale: [0.8, 1],
+    opacity: [0, 1],
+    delay: anime.stagger(200, {start: 1600}),
+    duration: 1000,
+    easing: 'easeOutExpo',
+  });
+});
+  </script>
+</main>
+<!-- Footer -->
+<footer class="footer">
+  &copy; 2024 Acecraft Apparel. All rights reserved.
+</footer>
+
+</body>
+</html>
