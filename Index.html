@@ -298,7 +298,12 @@
     <img src="./Watermarked Tshirt Designs/Tshirt Design 2.jpg" alt="Design 3">
     </div> <!-- Add more design images as needed -->
   </div>
-  <button>See More</button>
+  <button id="coll-btn">See More</button>
+  <script>
+    $('#coll-btn').on('click', function() {
+    window.location.href = 'Collection.html';
+  });
+  </script>
     <script>
     $(document).ready(function() {
       // Disable right-click on images within the designs class
